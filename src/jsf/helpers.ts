@@ -88,6 +88,61 @@ export function parseMojarraAction(onclick: string): MojarraAction | null {
   };
 }
 
+/**
+ * Normaliza para comparar etiquetas de forma tolerante a mayúsculas,
+ * tildes y decoración visual del portal (p. ej. la etiqueta real
+ * "-- Todos --" debe emparejar con la entrada de usuario "Todos").
+ */
+function normalizeLabel(value: string): string {
+  return value
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9]+/g, " ")
+    .trim();
+}
+
+/**
+ * Resuelve el valor de un <select> aceptando código numérico tal cual, o
+ * una etiqueta (case/tilde-insensitive) mapeada a su código. Si la
+ * etiqueta no está en el mapa, la deja pasar sin cambios (permite seguir
+ * usando códigos crudos que aún no se mapearon).
+ */
+export function resolveByLabel(
+  raw: string | undefined,
+  labelToCode: Record<string, string>
+): string {
+  const t = (raw ?? "").trim();
+  if (!t) return "";
+  if (/^\d+$/.test(t)) return t;
+  return labelToCode[normalizeLabel(t)] ?? t;
+}
+
+export interface FilterOption {
+  value: string;
+  label: string;
+}
+
+/**
+ * Como resolveByLabel, pero resuelve contra una lista real {value,label}
+ * (p. ej. un mapa interno nombre→código) en vez de un mapa fijo escrito a
+ * mano. Si hay etiquetas duplicadas en la lista (ocurre en catálogos grandes
+ * con nombres repetidos, p. ej. "SALA CIVIL"), se resuelve la primera
+ * coincidencia; usa el código numérico para desambiguar con certeza.
+ */
+export function resolveFromOptions(
+  raw: string | undefined,
+  options: FilterOption[],
+  fallback: string
+): string {
+  const t = (raw ?? "").trim();
+  if (!t) return fallback;
+  if (/^\d+$/.test(t)) return t;
+  const key = normalizeLabel(t);
+  const match = options.find((o) => normalizeLabel(o.label) === key);
+  return match?.value ?? fallback;
+}
+
 export function sanitizeFilename(value: string, maxLength = 120): string {
   const cleaned = value
     .normalize("NFKD")

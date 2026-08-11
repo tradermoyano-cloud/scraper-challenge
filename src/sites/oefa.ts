@@ -5,6 +5,7 @@ import {
   extractPartialUpdate,
   extractViewState,
   parseMojarraAction,
+  resolveByLabel,
 } from "../jsf/helpers";
 import { logger } from "../logger";
 import { DocumentRecord, PageResult } from "../types";
@@ -13,6 +14,23 @@ const BASE = "https://publico.oefa.gob.pe";
 const PAGE_URL = `${BASE}/repdig/consulta/consultaTfa.xhtml`;
 const FORM = "listarDetalleInfraccionRAAForm";
 const TABLE = `${FORM}:dt`;
+
+/** Códigos del <select> idsector en el portal (value → etiqueta). */
+const OEFA_SECTOR_BY_LABEL: Record<string, string> = {
+  electricidad: "2",
+  hidrocarburos: "3",
+  industria: "9",
+  mineria: "1",
+  pesqueria: "8",
+};
+
+/**
+ * El campo Sector del portal es un select por código numérico.
+ * Acepta el código (`8`) o el nombre (`Pesquería` / `PESQUERIA`).
+ */
+export function resolveOefaSector(raw?: string): string {
+  return resolveByLabel(raw, OEFA_SECTOR_BY_LABEL);
+}
 
 export interface OefaSession {
   viewState: string;
@@ -81,7 +99,7 @@ export class OefaScraper {
       [`${FORM}:txtNroexp`]: filters.expediente ?? "",
       [`${FORM}:j_idt21`]: filters.administrado ?? "",
       [`${FORM}:j_idt25`]: filters.unidad ?? "",
-      [`${FORM}:idsector`]: filters.sector ?? "",
+      [`${FORM}:idsector`]: resolveOefaSector(filters.sector),
       [`${FORM}:j_idt34`]: filters.resolucion ?? "",
       [`${FORM}:dt_scrollState`]: "0,0",
       "javax.faces.ViewState": this.viewState,
