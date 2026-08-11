@@ -1,0 +1,22 @@
+node_modules/
+dist/
+output/
+*.log
+.env
+.env.*
+.DS_Store
+*.pdf
+coverage/
+.idea/
+.vscode/
+
+# Notas personales
+nota.txt
+
+# Kit local / orquestador (no entregable Magnar)
+.cursor/
+.rag-hub.json
+.orchestrator-kit.json
+TODO.md
+scripts/
+docs/

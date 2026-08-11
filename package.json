@@ -1,0 +1,41 @@
+{
+  "name": "scraper-challenge",
+  "version": "1.0.0",
+  "description": "Scraper TypeScript (axios + cheerio) para jurisprudencia PJ Perú y OEFA",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "scrape": "tsx src/index.ts",
+    "scrape:oefa": "tsx src/index.ts --site oefa",
+    "scrape:pj": "tsx src/index.ts --site pj",
+    "demo:oefa": "tsx src/index.ts --site oefa --max-pages 1 --max-docs 2 --pdfs --delay 600",
+    "start": "node dist/index.js",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test src/**/*.test.ts"
+  },
+  "keywords": [
+    "scraper",
+    "typescript",
+    "jsf",
+    "peru",
+    "jurisprudencia",
+    "oefa"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.19.0",
+    "axios-cookiejar-support": "^6.0.5",
+    "cheerio": "^1.2.0",
+    "tough-cookie": "^6.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "@types/tough-cookie": "^4.0.5",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
