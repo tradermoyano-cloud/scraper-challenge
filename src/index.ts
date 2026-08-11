@@ -18,11 +18,11 @@ Sitios:
 
 Opciones:
   --site <pj|oefa>       Sitio a scrapear (default: oefa)
-  --max-pages <n>        Máximo de páginas
-  --max-docs <n>         Máximo de documentos
+  --max-pages <n>        Máximo de páginas (<n> = entero ≥ 1; omitir = sin tope)
+  --max-docs <n>         Máximo de documentos (<n> = entero ≥ 1; omitir = sin tope)
   --pdfs                 Descargar PDFs (default: sí)
-  --delay <ms>           Delay entre requests (default: 800)
-  --retries <n>          Reintentos ante 429/errores (default: 5)
+  --delay <ms>           Delay entre requests en ms (<ms> = entero ≥ 0; default: 800)
+  --retries <n>          Reintentos ante 429/errores (<n> = entero ≥ 1; default: 5)
   --out <dir>            Directorio de salida (default: output/<site>-<timestamp>)
   --filter key=value     Filtro de búsqueda (repetible)
   --help                 Mostrar esta ayuda
