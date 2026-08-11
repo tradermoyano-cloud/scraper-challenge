@@ -1,0 +1,14 @@
+node_modules
+dist
+output
+.git
+.cursor
+*.md
+!vpn/README.md
+.env
+.env.*
+!.env.example
+vpn/*.ovpn
+vpn/auth.txt
+coverage
+nota.txt

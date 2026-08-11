@@ -1,0 +1,68 @@
+# scraper = OEFA (sin VPN). scraper-pj = PJ (profile pj + vpn).
+# Uso: docker compose run --rm scraper
+#      docker compose --profile pj up -d vpn && docker compose --profile pj run --rm scraper-pj
+
+services:
+  vpn:
+    image: dperson/openvpn-client:latest
+    profiles: ["pj"]
+    cap_add:
+      - NET_ADMIN
+    devices:
+      - /dev/net/tun
+    security_opt:
+      - label:disable
+    volumes:
+      - ./vpn:/vpn:ro
+    restart: unless-stopped
+
+  scraper:
+    build: .
+    volumes:
+      - ./output:/app/output
+    environment:
+      NODE_ENV: ${NODE_ENV:-production}
+    command:
+      [
+        "npm",
+        "run",
+        "scrape",
+        "--",
+        "--site",
+        "oefa",
+        "--max-pages",
+        "1",
+        "--max-docs",
+        "2",
+        "--pdfs",
+        "--delay",
+        "600",
+      ]
+
+  # Comparte la red del contenedor VPN (salida Perú).
+  scraper-pj:
+    profiles: ["pj"]
+    build: .
+    network_mode: "service:vpn"
+    depends_on:
+      - vpn
+    volumes:
+      - ./output:/app/output
+    environment:
+      NODE_ENV: ${NODE_ENV:-production}
+    command:
+      [
+        "npm",
+        "run",
+        "scrape",
+        "--",
+        "--site",
+        "pj",
+        "--max-pages",
+        "1",
+        "--max-docs",
+        "2",
+        "--pdfs",
+        "--delay",
+        "1500",
+      ]
