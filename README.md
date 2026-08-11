@@ -303,9 +303,51 @@ docker compose run --rm --entrypoint npm scraper run scrape -- \
 
 ### Filtros `--filter` por sitio
 
-**PJ** (`--site pj`): `q` (texto libre), `anio`, `corte`, `distrito`, `especialidad`, `sala`.
+Se pueden repetir: `--filter clave=valor --filter otra=valor`.
 
-**OEFA** (`--site oefa`): `expediente`, `administrado`, `unidad`, `sector`, `resolucion`.
+#### PJ (`--site pj`)
+
+| Clave | Significado | Ejemplo |
+|-------|-------------|---------|
+| `q` | Texto libre de búsqueda | `--filter q=homicidio` |
+| `anio` | Año de resolución (`buAnio`) | `--filter anio=2020` |
+| `corte` | Código de corte (default interno `1`) | `--filter corte=1` |
+| `distrito` | Código de distrito (default `0`) | `--filter distrito=0` |
+| `especialidad` | Código de especialidad (default `0`) | `--filter especialidad=0` |
+| `sala` | Código de sala (default `0`) | `--filter sala=0` |
+
+```bash
+# PJ mezclado: texto + año
+docker compose --profile pj run --rm --entrypoint npm scraper-pj run scrape -- \
+  --site pj --max-pages 3 --max-docs 10 --pdfs --delay 1500 \
+  --filter q=homicidio --filter anio=2020
+```
+
+```bash
+# PJ mezclado: texto + año + códigos de formulario
+docker compose --profile pj run --rm --entrypoint npm scraper-pj run scrape -- \
+  --site pj --max-pages 3 --max-docs 10 --pdfs --delay 1500 \
+  --filter q=homicidio --filter anio=2020 --filter corte=1 --filter distrito=0
+```
+
+`corte`, `distrito`, `especialidad` y `sala` son códigos del formulario JSF del portal (no nombres legibles). Si no los conoces, filtra con `q` y `anio`. Para comprobar el año, mira `fechaResolucion` en `documents.jsonl` (no el nombre del PDF).
+
+#### OEFA (`--site oefa`)
+
+| Clave | Significado | Ejemplo |
+|-------|-------------|---------|
+| `expediente` | Número de expediente | `--filter expediente=123-2020` |
+| `administrado` | Nombre del administrado | `--filter administrado=ACME` |
+| `unidad` | Unidad orgánica | `--filter unidad=OEFA` |
+| `sector` | Sector | `--filter sector=1` |
+| `resolucion` | Número o texto de resolución | `--filter resolucion=001-2020` |
+
+```bash
+# OEFA mezclado: expediente + sector (ilustrativo)
+docker compose run --rm --entrypoint npm scraper run scrape -- \
+  --site oefa --max-pages 1 --max-docs 2 --pdfs --delay 600 \
+  --filter expediente=123-2020 --filter sector=1
+```
 
 ### Errores 429 (demasiadas peticiones)
 
