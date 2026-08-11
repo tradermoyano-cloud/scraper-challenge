@@ -12,3 +12,5 @@ vpn/*.ovpn
 vpn/auth.txt
 coverage
 nota.txt
+**/*.test.ts
+**/__fixtures__/

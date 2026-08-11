@@ -13,6 +13,9 @@ coverage/
 # Notas personales
 nota.txt
 
+# Artefacto local de discovery de filtros PJ (no es runtime)
+src/sites/data/.pj-discovery-checkpoint.json
+
 # Kit local / orquestador (no entregable Magnar)
 .cursor/
 .rag-hub.json

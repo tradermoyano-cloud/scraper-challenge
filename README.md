@@ -307,47 +307,74 @@ Se pueden repetir: `--filter clave=valor --filter otra=valor`.
 
 #### PJ (`--site pj`)
 
-| Clave | Significado | Ejemplo |
-|-------|-------------|---------|
-| `q` | Texto libre de búsqueda | `--filter q=homicidio` |
-| `anio` | Año de resolución (`buAnio`) | `--filter anio=2020` |
-| `corte` | Código de corte (default interno `1`) | `--filter corte=1` |
-| `distrito` | Código de distrito (default `0`) | `--filter distrito=0` |
-| `especialidad` | Código de especialidad (default `0`) | `--filter especialidad=0` |
-| `sala` | Código de sala (default `0`) | `--filter sala=0` |
+Los filtros se pasan **por nombre** (etiquetas del portal).
+
+| Clave | Significado |
+|-------|-------------|
+| `q` | Texto libre de búsqueda (ej. `homicidio`) |
+| `anio` | Año de resolución (ej. `2020`) |
+| `expediente` | Nro. de expediente (solo dígitos, máx. 11) |
+| `corte` | Nivel: `Corte Suprema`, `Corte Superior` |
+| `distrito` | Distrito Judicial: `Todos`, `Amazonas`, `Ancash`, `Apurimac`, `Arequipa`, `Ayacucho`, `Cajamarca`, `Callao`, `Cañete`, `Lima Norte`, `Cusco`, `Huancavelica`, `Huánuco`, `Huaura`, `Ica`, `Junin`, `La Libertad`, `Lambayeque`, `Lima`, `Loreto`, `Piura`, `Puno`, `San Martin`, `Tacna`, `Ucayali`, `Del Santa`, `Tumbes`, `Madre de Dios`, `Moquegua`, `Pasco`, `Lima Sur`, `Sullana`, `Lima Este`, `Puente Piedra - Ventanilla`, `Selva Central` |
+| `especialidad` | `Todos`, `Civil`, `Comercial`, `Contencioso Administrativo`, `Familia Civil`, `Familia Tutelar`, `Familia Penal`, `Laboral`, `Derecho Constitucional` |
+| `organo` | Órgano Jurisdiccional (alias `sala`). Ej. `1° SALA CIVIL`, `SALA CIVIL – SEDE CENTRAL`. Listado completo en [`src/sites/data/pj-organo.json`](src/sites/data/pj-organo.json) |
+| `tipoRecurso` | `Todos`, `Acción Popular`, `Amparo`, `Apelación`, `Casación`, `Casación Previsional`, `Competencia`, `Consulta`, `Extradición Activa`, `Extradición Pasiva`, `Inhibición`, `Medida Cautelar de Proceso de Amparo`, `Nulidad`, `Queja`, `Queja NCPP`, `Querella`, `Recurso de Nulidad`, `Recurso de Queja Directa`, `Recurso de Queja Excepcional`, `Recurso de Queja Ordinaria`, `Recusación`, `Revisión de Medida Disciplinaria`, `Revisión de Sentencia` |
+| `tipoResolucion` | `Todos`, `Auto`, `Sentencia`, `Sentencia de Vista` |
 
 ```bash
-# PJ mezclado: texto + año
+# PJ: año
 docker compose --profile pj run --rm --entrypoint npm scraper-pj run scrape -- \
-  --site pj --max-pages 3 --max-docs 10 --pdfs --delay 1500 \
+  --site pj --max-pages 1 --max-docs 5 --pdfs --delay 1500 \
+  --filter anio=2020
+```
+
+```bash
+# PJ: texto + año
+docker compose --profile pj run --rm --entrypoint npm scraper-pj run scrape -- \
+  --site pj --max-pages 1 --max-docs 5 --pdfs --delay 1500 \
   --filter q=homicidio --filter anio=2020
 ```
 
 ```bash
-# PJ mezclado: texto + año + códigos de formulario
+# PJ: corte + distrito + especialidad por nombre
 docker compose --profile pj run --rm --entrypoint npm scraper-pj run scrape -- \
-  --site pj --max-pages 3 --max-docs 10 --pdfs --delay 1500 \
-  --filter q=homicidio --filter anio=2020 --filter corte=1 --filter distrito=0
+  --site pj --max-pages 1 --max-docs 5 --pdfs --delay 1500 \
+  --filter corte="Corte Superior" --filter distrito=Lima --filter especialidad="Familia Penal"
 ```
 
-`corte`, `distrito`, `especialidad` y `sala` son códigos del formulario JSF del portal (no nombres legibles). Si no los conoces, filtra con `q` y `anio`. Para comprobar el año, mira `fechaResolucion` en `documents.jsonl` (no el nombre del PDF).
+Si ves HTTP 500 del portal, reintenta la misma búsqueda.
 
 #### OEFA (`--site oefa`)
 
 | Clave | Significado | Ejemplo |
 |-------|-------------|---------|
-| `expediente` | Número de expediente | `--filter expediente=123-2020` |
-| `administrado` | Nombre del administrado | `--filter administrado=ACME` |
-| `unidad` | Unidad orgánica | `--filter unidad=OEFA` |
-| `sector` | Sector | `--filter sector=1` |
-| `resolucion` | Número o texto de resolución | `--filter resolucion=001-2020` |
+| `expediente` | Número de expediente | `--filter expediente=2494-2017-OEFA/DFSAI/PAS` |
+| `administrado` | Nombre del administrado | `--filter administrado=Electro Sur Este S.A.A.` |
+| `unidad` | Unidad fiscalizable | `--filter unidad=Central Termica Urpipata` |
+| `sector` | Sector (por nombre) | `--filter sector=ELECTRICIDAD` |
+| `resolucion` | Nro. de resolución de apelación | `--filter resolucion=282-2018-OEFA/TFA-SMEPIM` |
+
+**`sector`** — `MINERIA`, `ELECTRICIDAD`, `HIDROCARBUROS`, `PESQUERIA`, `INDUSTRIA`.
 
 ```bash
-# OEFA mezclado: expediente + sector (ilustrativo)
+# OEFA: expediente
 docker compose run --rm --entrypoint npm scraper run scrape -- \
-  --site oefa --max-pages 1 --max-docs 2 --pdfs --delay 600 \
-  --filter expediente=123-2020 --filter sector=1
+  --site oefa --max-pages 1 --max-docs 3 --pdfs --delay 600 \
+  --filter expediente=2494-2017-OEFA/DFSAI/PAS
 ```
+
+```bash
+# OEFA: varios filtros por nombre
+docker compose run --rm --entrypoint npm scraper run scrape -- \
+  --site oefa --max-pages 1 --max-docs 3 --pdfs --delay 600 \
+  --filter expediente=2494-2017-OEFA/DFSAI/PAS \
+  --filter "administrado=Electro Sur Este S.A.A." \
+  --filter "unidad=Central Termica Urpipata" \
+  --filter sector=ELECTRICIDAD \
+  --filter resolucion=282-2018-OEFA/TFA-SMEPIM
+```
+
+Si combinas muchos campos con texto incompleto, puedes obtener `documentsExtracted: 0`. Comprueba el resultado en `documents.jsonl`.
 
 ### Errores 429 (demasiadas peticiones)
 
@@ -399,13 +426,15 @@ Para PJ, el camino soportado es el **Camino A** (Docker + VPN). No uses Node en 
 
 ```text
 src/
-  index.ts           Línea de comandos (lee los parámetros)
-  scraper.ts         Orquesta paginación, límites y guardado
-  http/client.ts     Cliente HTTP con cookies y reintentos ante 429
-  sites/pj.ts        Adaptador del portal PJ
-  sites/oefa.ts      Adaptador del portal OEFA
-  pdf/downloader.ts  Descarga de PDFs
-  storage/           Escritura de JSONL y summary
+  index.ts                    Línea de comandos (lee los parámetros)
+  scraper.ts                  Orquesta paginación, límites y guardado
+  http/client.ts               Cliente HTTP con cookies y reintentos ante 429
+  jsf/helpers.ts                Helpers JSF/RichFaces (ViewState, AJAX, resolución de filtros por etiqueta)
+  sites/pj.ts                  Adaptador del portal PJ
+  sites/oefa.ts                Adaptador del portal OEFA
+  sites/data/                   Nombres de filtros PJ (mapeo interno)
+  pdf/downloader.ts             Descarga de PDFs
+  storage/                      Escritura de JSONL y summary
 ```
 
 ---

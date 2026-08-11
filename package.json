@@ -10,8 +10,7 @@
     "scrape:pj": "tsx src/index.ts --site pj",
     "demo:oefa": "tsx src/index.ts --site oefa --max-pages 1 --max-docs 2 --pdfs --delay 600",
     "start": "node dist/index.js",
-    "typecheck": "tsc --noEmit",
-    "test": "tsx --test src/**/*.test.ts"
+    "typecheck": "tsc --noEmit"
   },
   "keywords": [
     "scraper",
