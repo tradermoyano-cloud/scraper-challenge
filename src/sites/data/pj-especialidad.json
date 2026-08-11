@@ -1,0 +1,38 @@
+[
+  {
+    "value": "0",
+    "label": "-- Todos --"
+  },
+  {
+    "value": "1",
+    "label": "Civil"
+  },
+  {
+    "value": "2",
+    "label": "Comercial"
+  },
+  {
+    "value": "3",
+    "label": "Contencioso Administrativo"
+  },
+  {
+    "value": "4",
+    "label": "Familia Civil"
+  },
+  {
+    "value": "5",
+    "label": "Familia Tutelar"
+  },
+  {
+    "value": "6",
+    "label": "Familia Penal"
+  },
+  {
+    "value": "9",
+    "label": "Laboral"
+  },
+  {
+    "value": "17",
+    "label": "Derecho Constitucional"
+  }
+]

@@ -1,0 +1,1222 @@
+[
+  {
+    "value": "0",
+    "label": "-- Todos --"
+  },
+  {
+    "value": "1160",
+    "label": "SALA CIVIL – SEDE CENTRAL"
+  },
+  {
+    "value": "1292",
+    "label": "SALA CIVIL - Sede Central"
+  },
+  {
+    "value": "1618",
+    "label": "1° SALA CIVIL"
+  },
+  {
+    "value": "1619",
+    "label": "2° SALA CIVIL"
+  },
+  {
+    "value": "1620",
+    "label": "3° SALA CIVIL"
+  },
+  {
+    "value": "1621",
+    "label": "1° SALA LABORAL"
+  },
+  {
+    "value": "1622",
+    "label": "2° SALA LABORAL"
+  },
+  {
+    "value": "1623",
+    "label": "3° SALA LABORAL"
+  },
+  {
+    "value": "1624",
+    "label": "4° SALA LABORAL"
+  },
+  {
+    "value": "1781",
+    "label": "1° SALA MIXTA - Huamachuco"
+  },
+  {
+    "value": "1865",
+    "label": "1° SALA CIVIL"
+  },
+  {
+    "value": "1866",
+    "label": "2° SALA CIVIL"
+  },
+  {
+    "value": "2013",
+    "label": "6° SALA CONT. ADM. SUB ESPEC. TRIBUTARIA,AD. Y DE MCDO."
+  },
+  {
+    "value": "2026",
+    "label": "2° SALA CONTENCIOSA ADMINISTRATIVA"
+  },
+  {
+    "value": "2029",
+    "label": "5° SALA CONTENCIOSA ADMINISTRATIVA"
+  },
+  {
+    "value": "2033",
+    "label": "1° SALA LABORAL"
+  },
+  {
+    "value": "2034",
+    "label": "2° SALA LABORAL"
+  },
+  {
+    "value": "2035",
+    "label": "3° SALA LABORAL"
+  },
+  {
+    "value": "2049",
+    "label": "4° SALA LABORAL PERMANENTE"
+  },
+  {
+    "value": "2050",
+    "label": "7° SALA ESPECIALIZADO EN LO CONTENCIOSO ADMINISTRATIVO"
+  },
+  {
+    "value": "2056",
+    "label": "1° SALA CONTENCIOSA ADMINISTRATIVA TRANSITORIA"
+  },
+  {
+    "value": "2068",
+    "label": "3° SALA CONTENCIOSA ADMINISTRATIVA TRANSITORIA"
+  },
+  {
+    "value": "2069",
+    "label": "4° SALA CONTENCIOSA ADMINISTRATIVA"
+  },
+  {
+    "value": "2572",
+    "label": "1° SALA COMERCIAL"
+  },
+  {
+    "value": "2573",
+    "label": "2° SALA COMERCIAL"
+  },
+  {
+    "value": "2718",
+    "label": "1 SALA CIVIL"
+  },
+  {
+    "value": "2719",
+    "label": "2 SALA CIVIL"
+  },
+  {
+    "value": "2720",
+    "label": "SALA LABORAL"
+  },
+  {
+    "value": "2890",
+    "label": "1Â° SALA CIVIL - SEDE CENTRAL"
+  },
+  {
+    "value": "3045",
+    "label": "SALA MIXTA - Sub. sede Moyobamba"
+  },
+  {
+    "value": "3082",
+    "label": "SALA MIXTA DESCENTRALIZADA - Sede Juanjui"
+  },
+  {
+    "value": "3656",
+    "label": "7° SALA LABORAL"
+  },
+  {
+    "value": "3657",
+    "label": "8° SALA LABORAL"
+  },
+  {
+    "value": "3671",
+    "label": "SALA PENAL DE APELACIONES - SEDE BAGUA"
+  },
+  {
+    "value": "3672",
+    "label": "SALA PENAL LIQUIDADORA - SEDE BAGUA"
+  },
+  {
+    "value": "3694",
+    "label": "SALA CIVIL - SEDE CENTRAL"
+  },
+  {
+    "value": "3695",
+    "label": "SALA PENAL DE APELACIONES"
+  },
+  {
+    "value": "3696",
+    "label": "SALA PENAL LIQUIDADORA (ADICION DE FUNC.DE SALA PENAL APEL)"
+  },
+  {
+    "value": "3726",
+    "label": "SALA CIVIL - SEDE UTCUBAMBA"
+  },
+  {
+    "value": "3762",
+    "label": "1° SALA PENAL DE APELACIONES - Sede Sicuani"
+  },
+  {
+    "value": "3789",
+    "label": "1° SALA DE APELACIONES - SEDE CENTRAL"
+  },
+  {
+    "value": "3790",
+    "label": "1° SALA PENAL DE APELACION (AD.FUNC.LIQUIDADOR) - SEDE"
+  },
+  {
+    "value": "3801",
+    "label": "2° SALA PENAL DE APELACION (AD.FUNC.LIQUIDADOR) - SEDE"
+  },
+  {
+    "value": "3802",
+    "label": "2° SALA PENAL DE APELACIONES - Sede Central"
+  },
+  {
+    "value": "3806",
+    "label": "2º SALA PENAL DE APELACIONES - CORRUP. FUNC. - SEDE CENTRAL"
+  },
+  {
+    "value": "3848",
+    "label": "SALA  PENAL APELAC. DELITOS AMBIENTALES - SEDE CENTRAL"
+  },
+  {
+    "value": "3912",
+    "label": "1° SALA MIXTA DESC. DE URUBAMBA - S. Urubamba"
+  },
+  {
+    "value": "3913",
+    "label": "1° SALA PENAL DE APELACIONES - Sede Urubamba"
+  },
+  {
+    "value": "3955",
+    "label": "SALA PENAL DE APELACIONES - S. PLAZA DE A. CHINCHA"
+  },
+  {
+    "value": "3956",
+    "label": "SALA PENAL LIQUIDADORA"
+  },
+  {
+    "value": "3972",
+    "label": "1° SALA DE APELACIONES - S. MÓDULO PENAL"
+  },
+  {
+    "value": "3981",
+    "label": "2° SALA PENAL DE APELACIONES - SEDE CENTRAL"
+  },
+  {
+    "value": "4017",
+    "label": "SALA PENAL LIQUIDADORA  - Sede Central"
+  },
+  {
+    "value": "4018",
+    "label": "SALA PENAL LIQUIDADORA (AD. FUNCIONES) - SEDE CENTRAL"
+  },
+  {
+    "value": "4034",
+    "label": "SALA DE APELACIONES - SEDE NASCA"
+  },
+  {
+    "value": "4062",
+    "label": "SALA PENAL LIQUIDADORA - ADICION FUNC. SALA MIXTA"
+  },
+  {
+    "value": "5502",
+    "label": "SALA LABORAL - SEDE CENTRAL"
+  },
+  {
+    "value": "5503",
+    "label": "SALA CIVIL - SEDE CENTRAL"
+  },
+  {
+    "value": "5504",
+    "label": "2° SALA CIVIL - SEDE CENTRAL"
+  },
+  {
+    "value": "5505",
+    "label": "SALA CIVIL DESCENTRALIZADA - SEDE CHINCHA"
+  },
+  {
+    "value": "5506",
+    "label": "SALA MIXTA - SEDE CHINCHA"
+  },
+  {
+    "value": "5507",
+    "label": "SALA MIXTA - SEDE NASCA"
+  },
+  {
+    "value": "5508",
+    "label": "SALA CIVIL DESCENTRALIZADA - SEDE PISCO"
+  },
+  {
+    "value": "5509",
+    "label": "SALA MIXTA - SEDE PISCO"
+  },
+  {
+    "value": "5510",
+    "label": "2° SALA LABORAL"
+  },
+  {
+    "value": "5511",
+    "label": "SALA CIVIL(EX 1°) - SEDE CENTRAL"
+  },
+  {
+    "value": "5512",
+    "label": "1° SALA LABORAL - SEDE CENTRAL"
+  },
+  {
+    "value": "5513",
+    "label": "1° SALA MIXTA - Sede Sicuani"
+  },
+  {
+    "value": "5528",
+    "label": "SALA PENAL LIQUIDADORA - Sede Central"
+  },
+  {
+    "value": "5529",
+    "label": "SALA PENAL - Sede Central"
+  },
+  {
+    "value": "5530",
+    "label": "1° SALA CIVIL - Sede Central"
+  },
+  {
+    "value": "5533",
+    "label": "SALA PENAL DE APELACIONES - SEDE HUARI"
+  },
+  {
+    "value": "5549",
+    "label": "SALA PENAL LIQUIDADORA PERMANENTE"
+  },
+  {
+    "value": "5553",
+    "label": "SALA PENAL LIQUIDADORA (AD. FUNC. 1¿ SPA) - SEDE CENTRAL"
+  },
+  {
+    "value": "5581",
+    "label": "1° SALA PENAL APELACIONES"
+  },
+  {
+    "value": "5607",
+    "label": "SALA LABORAL"
+  },
+  {
+    "value": "5609",
+    "label": "SALA PENAL LIQUIDADORA (AD. FUNC. 2¿ SPA) - SEDE CENTRAL"
+  },
+  {
+    "value": "5620",
+    "label": "SALA MIXTA DESCENTRALIZADA - SEDE HUARI"
+  },
+  {
+    "value": "5621",
+    "label": "SALA PENAL DE APELACIONES (AD. FUNC. SMD) - SEDE HUARI"
+  },
+  {
+    "value": "5635",
+    "label": "SALA PENAL LIQUIDADORA TRANSITORIA-Sede Central"
+  },
+  {
+    "value": "5667",
+    "label": "2° SALA PENAL DE APELACIONES - SEDE CENTRAL"
+  },
+  {
+    "value": "5673",
+    "label": "SALA MIXTA TRANSITORIA DESCENTRALIZADA - SEDE HUARI"
+  },
+  {
+    "value": "5687",
+    "label": "2° SALA PENAL DE APELACIONES - NCPP"
+  },
+  {
+    "value": "5690",
+    "label": "SALA LABORAL - SEDE CENTRAL"
+  },
+  {
+    "value": "5719",
+    "label": "SALA PENAL LIQUIDADORA (AD. FUNC. SALA MIXTA) - PICHARI"
+  },
+  {
+    "value": "5720",
+    "label": "SALA DE APELACIONES (FUNC. ADICIONAL)- PUQUIO"
+  },
+  {
+    "value": "5724",
+    "label": "1° SALA PENAL DE APELACION EN ADIC SALA LIQUIDADORA"
+  },
+  {
+    "value": "5726",
+    "label": "SALA CIVIL DE HUAMANGA"
+  },
+  {
+    "value": "5733",
+    "label": "1° SALA PENAL DE APELACIONES - NCPP"
+  },
+  {
+    "value": "5735",
+    "label": "2° SALA PENAL DE APELACION EN ADIC SALA LIQUIDADORA"
+  },
+  {
+    "value": "5736",
+    "label": "SALA PENAL LIQUIDADORA (AD. FUNC. SALA LABORAL)-SEDE CENTRAL"
+  },
+  {
+    "value": "5745",
+    "label": "SALA MIXTA DESCENTRALIZADA - VRAEM - SEDE PICHARI"
+  },
+  {
+    "value": "5747",
+    "label": "SALA PENAL LIQUIDADORA (FUNC. ADICIONAL)- PUQUIO"
+  },
+  {
+    "value": "5767",
+    "label": "SALA MIXTA DESCENTRALZIADA - PUQUIO"
+  },
+  {
+    "value": "5779",
+    "label": "SALA PENAL DE APELACIONES (AD. FUNC. SALA MIXTA) - NCPP"
+  },
+  {
+    "value": "5812",
+    "label": "2° SALA PENAL DE APELACIONES - SEDE QHAPAQ ÑAN"
+  },
+  {
+    "value": "5835",
+    "label": "SALA CIVIL TRANSITORIA - SEDE CENTRAL"
+  },
+  {
+    "value": "5836",
+    "label": "SALA LABORAL - SEDE BUGANVILLAS"
+  },
+  {
+    "value": "5850",
+    "label": "SALA CIVIL DESCENTRALIZADA - Sede Chota"
+  },
+  {
+    "value": "5867",
+    "label": "SALA PENAL LIQUIDADORA (AD. FUNC. 1¿SPA) - SEDE QHAPAQ ¿AN"
+  },
+  {
+    "value": "5869",
+    "label": "SALA CIVIL - SEDE DE CORTE"
+  },
+  {
+    "value": "5878",
+    "label": "SALA LABORAL (EJE) - SEDE BUGANVILLAS"
+  },
+  {
+    "value": "5890",
+    "label": "SALA PENAL LIQUIDADORA (AD. FUNC. 2¿ SPA) - SEDE QHAPAQ ¿AN"
+  },
+  {
+    "value": "5891",
+    "label": "1° SALA PENAL DE APELACIONES - SEDE QHAPAQ ÑAN"
+  },
+  {
+    "value": "5901",
+    "label": "2° SALA PENAL DE APELACIONES - NUEVA SEDE CENTRAL"
+  },
+  {
+    "value": "5902",
+    "label": "SALA PENAL DE APELACIONES TRANSITORIA - SEDE DOS DE MAYO"
+  },
+  {
+    "value": "5938",
+    "label": "SALA PENAL LIQUIDADORA (AD. FUNC. 4¿ SPA) -SEDE CENTRAL"
+  },
+  {
+    "value": "5943",
+    "label": "1° SALA PENAL DE APELACIONES - NUEVA SEDE CENTRAL"
+  },
+  {
+    "value": "5952",
+    "label": "1° SALA CIVIL - NUEVA SEDE CENTRAL"
+  },
+  {
+    "value": "5956",
+    "label": "SALA PENAL LIQUIDADORA (AD. FUNC. SPAT) - SEDE DOS DE MAYO"
+  },
+  {
+    "value": "5957",
+    "label": "SALA ESPECIALIZADA LABORAL"
+  },
+  {
+    "value": "5967",
+    "label": "2° SALA CIVIL - NUEVA SEDE CENTRAL"
+  },
+  {
+    "value": "5977",
+    "label": "SALA PENAL LIQUIDADORA (AD. FUNC. 3¿ SPA) -SEDE CENTRAL"
+  },
+  {
+    "value": "6056",
+    "label": "1° SALA CIVIL"
+  },
+  {
+    "value": "6078",
+    "label": "2° SALA CIVIL"
+  },
+  {
+    "value": "6079",
+    "label": "SALA LABORAL"
+  },
+  {
+    "value": "6081",
+    "label": "1° SALA PENAL DE APELACIONES"
+  },
+  {
+    "value": "6087",
+    "label": "2° SALA PENAL DE APELACIONES - SEDE CENTRAL"
+  },
+  {
+    "value": "6109",
+    "label": "SALA LABORAL TRANSITORIA"
+  },
+  {
+    "value": "6110",
+    "label": "2° SALA PENAL DE APELACIONES(AD. FUNC. SPLIQ) - SEDE CENTRAL"
+  },
+  {
+    "value": "6128",
+    "label": "SALA PENAL LIQUIDADORA - Sede Central - (CSJ JUNIN)"
+  },
+  {
+    "value": "6129",
+    "label": "1° JUZGADO CIVIL - Sede Central - (CSJ JUNIN)"
+  },
+  {
+    "value": "6130",
+    "label": "1° JUZGADO TRANSITORIO LABORAL - Sede Central  - (CSJ JUNIN)"
+  },
+  {
+    "value": "6131",
+    "label": "1° JUZG. PAZ LETRADO DEL TAMBO - Sede Central - (CSJ JUNIN)"
+  },
+  {
+    "value": "6132",
+    "label": "JUZGADO MIXTO - Sede Jun¿n - (CSJ JUNIN)"
+  },
+  {
+    "value": "6133",
+    "label": "JUZGADO DE PAZ LETRADO - Sede Satipo - (CSJ JUNIN)"
+  },
+  {
+    "value": "6134",
+    "label": "JUZGADO PAZ LETRADO LABORAL - Sede Central - (CSJ JUNIN)"
+  },
+  {
+    "value": "6135",
+    "label": "JUZGADO DE PAZ LETRADO - Sede Pichanaki - (CSJ JUNIN)"
+  },
+  {
+    "value": "6136",
+    "label": "1° JUZGADO ESPECIALIZADO DE TRABAJO - Sede Cen - (CSJ JUNIN)"
+  },
+  {
+    "value": "6137",
+    "label": "6° JUZGADO PENAL - Sede Central - (CSJ JUNIN)"
+  },
+  {
+    "value": "6138",
+    "label": "1° JUZGADO PENAL - Sede Tarma - (CSJ JUNIN)"
+  },
+  {
+    "value": "6139",
+    "label": "JUZGADO MIXTO - Sede Chupaca - (CSJ JUNIN)"
+  },
+  {
+    "value": "6140",
+    "label": "JUZGADO DE PAZ LETRADO - Sede Pampas - (CSJ JUNIN)"
+  },
+  {
+    "value": "6141",
+    "label": "JUZGADO DE PAZ LETRADO - Sede Chupaca - (CSJ JUNIN)"
+  },
+  {
+    "value": "6142",
+    "label": "2° JUZGADO ESPECIALIZADO DE TRABAJO - Sede Cen - (CSJ JUNIN)"
+  },
+  {
+    "value": "6143",
+    "label": "JUZGADO DE PAZ LETRADO - Sede Perene - (CSJ JUNIN)"
+  },
+  {
+    "value": "6144",
+    "label": "2° JUZGADO FAMILIA - Sede Central - (CSJ JUNIN)"
+  },
+  {
+    "value": "6145",
+    "label": "JUZGADO PENAL TRANSITORIO - Sede Satipo - (CSJ JUNIN)"
+  },
+  {
+    "value": "6146",
+    "label": "2° JUZGADO PENAL - Sede Tarma - (CSJ JUNIN)"
+  },
+  {
+    "value": "6147",
+    "label": "SALA MIXTA DE TARMA -Sede Sala de Tarma - (CSJ JUNIN)"
+  },
+  {
+    "value": "6148",
+    "label": "JUZGADO DE PAZ LETRADO - Sede Jauja - (CSJ JUNIN)"
+  },
+  {
+    "value": "6149",
+    "label": "2° JUZG. PAZ LETRADO - SEDE HUANCAYO (EX 3° JP - (CSJ JUNIN)"
+  },
+  {
+    "value": "6150",
+    "label": "1° JUZGADO DE PAZ LETRADO - SEDE CHILCA - (CSJ JUNIN)"
+  },
+  {
+    "value": "6151",
+    "label": "JUZGADO DE PAZ LETRADO - Sede San Agustin de C - (CSJ JUNIN)"
+  },
+  {
+    "value": "6152",
+    "label": "JUZGADO PENAL LIQUIDADOR (AD. FUNC. JUP) - SED - (CSJ JUNIN)"
+  },
+  {
+    "value": "6153",
+    "label": "JUZGADO PENAL LIQUIDADOR (AD. FUNC. JU)-SEDE S - (CSJ JUNIN)"
+  },
+  {
+    "value": "6154",
+    "label": "JUZGADO DE INVESTIGACION PREPARATORIA - SEDE P - (CSJ JUNIN)"
+  },
+  {
+    "value": "6155",
+    "label": "5° JUZGADO PENAL - Sede Central - (CSJ JUNIN)"
+  },
+  {
+    "value": "6156",
+    "label": "JUZGADO MIXTO - Sede La Concepcion - (CSJ JUNIN)"
+  },
+  {
+    "value": "6157",
+    "label": "2° JUZGADO PENAL - Sede Jauja - (CSJ JUNIN)"
+  },
+  {
+    "value": "6158",
+    "label": "1° JUZGADO MIXTO - Sede Satipo - (CSJ JUNIN)"
+  },
+  {
+    "value": "6159",
+    "label": "JUZGADO MIXTO - Sede Tarma - (CSJ JUNIN)"
+  },
+  {
+    "value": "6160",
+    "label": "JUZGADO MIXTO - SEDE LA OROYA - (CSJ JUNIN)"
+  },
+  {
+    "value": "6161",
+    "label": "SALA PENAL DE APELACIONES  - Sede Central - (CSJ JUNIN)"
+  },
+  {
+    "value": "6162",
+    "label": "3° JUZGADO PENAL UNIPERSONAL  - Sede Central - (CSJ JUNIN)"
+  },
+  {
+    "value": "6163",
+    "label": "SALA PENAL LIQUIDADORA - SEDE SALAS DE LA MERC - (CSJ JUNIN)"
+  },
+  {
+    "value": "6164",
+    "label": "4° JUZGADO FAMILIA - Sede Central - (CSJ JUNIN)"
+  },
+  {
+    "value": "6165",
+    "label": "3° JUZGADO CIVIL - Sede Central - (CSJ JUNIN)"
+  },
+  {
+    "value": "6166",
+    "label": "1° JUZGADO PENAL - Sede Central - (CSJ JUNIN)"
+  },
+  {
+    "value": "6167",
+    "label": "2° SALA MIXTA - Sede Central - (CSJ JUNIN)"
+  },
+  {
+    "value": "6168",
+    "label": "2° JUZGADO MIXTO - Sede Satipo - (CSJ JUNIN)"
+  },
+  {
+    "value": "6169",
+    "label": "3° JUZG. PAZ LETRADO DEL TAMBO - Sede Central - (CSJ JUNIN)"
+  },
+  {
+    "value": "6170",
+    "label": "JUZGADO DE PAZ LETRADO - Sede La Concepcion - (CSJ JUNIN)"
+  },
+  {
+    "value": "6171",
+    "label": "JUZGADO DE PAZ LETRADO - Sede La Oroya - (CSJ JUNIN)"
+  },
+  {
+    "value": "6172",
+    "label": "JUZGADO DE PAZ LETRADO - Sede Villa Rica - (CSJ JUNIN)"
+  },
+  {
+    "value": "6173",
+    "label": "JUZGADO DE PAZ LETRADO - Sede San Ramon - (CSJ JUNIN)"
+  },
+  {
+    "value": "6174",
+    "label": "JUZGADO DE PAZ LETRADO - Sede Rio Tambo - (CSJ JUNIN)"
+  },
+  {
+    "value": "6175",
+    "label": "4° JUZGADO CIVIL (COMERCIAL) - Sede Central - (CSJ JUNIN)"
+  },
+  {
+    "value": "6176",
+    "label": "4° JUZGADO PENAL - Sede Central - (CSJ JUNIN)"
+  },
+  {
+    "value": "6177",
+    "label": "JUZGADO MIXTO - Sede Pampas - (CSJ JUNIN)"
+  },
+  {
+    "value": "6178",
+    "label": "1° JUZGADO DE PAZ LETRADO - Sede Tarma - (CSJ JUNIN)"
+  },
+  {
+    "value": "6179",
+    "label": "JUZGADO DE PAZ LETRADO - Sede Colcabamba - (CSJ JUNIN)"
+  },
+  {
+    "value": "6180",
+    "label": "JUZGADO CIVIL TRANSITORIO - Sede La Merced - (CSJ JUNIN)"
+  },
+  {
+    "value": "6181",
+    "label": "JUZGADO DE PAZ LETRADO - Sede Pangoa - (CSJ JUNIN)"
+  },
+  {
+    "value": "6182",
+    "label": "1° SALA PENAL - Sede Central - (CSJ JUNIN)"
+  },
+  {
+    "value": "6183",
+    "label": "3° JUZGADO FAMILIA - Sede Central - (CSJ JUNIN)"
+  },
+  {
+    "value": "6184",
+    "label": "6° JUZGADO CIVIL - Sede Central - (CSJ JUNIN)"
+  },
+  {
+    "value": "6185",
+    "label": "2° JUZG. PAZ LETRADO DEL TAMBO - Sede Central - (CSJ JUNIN)"
+  },
+  {
+    "value": "6186",
+    "label": "JUZGADO PENAL TRANSITORIO - Sede La Concepcion - (CSJ JUNIN)"
+  },
+  {
+    "value": "6187",
+    "label": "JUZGADO CIVIL - Sede Jauja - (CSJ JUNIN)"
+  },
+  {
+    "value": "6188",
+    "label": "1° JUZGADO PENAL - Sede Jauja - (CSJ JUNIN)"
+  },
+  {
+    "value": "6189",
+    "label": "1° JUZG. PAZ LETRADO - SEDE HUANCAYO (EX 2° JP - (CSJ JUNIN)"
+  },
+  {
+    "value": "6190",
+    "label": "3° JUZG. PAZ LETRADO - SEDE HUANCAYO (EX 4° JP - (CSJ JUNIN)"
+  },
+  {
+    "value": "6191",
+    "label": "JUZGADO PENAL COLEGIADO (VIRTUAL)  - Sede Cent - (CSJ JUNIN)"
+  },
+  {
+    "value": "6192",
+    "label": "1° JUZGADO DE INVESTIGACION PREPARATORIA  - SE - (CSJ JUNIN)"
+  },
+  {
+    "value": "6193",
+    "label": "1° JUZGADO PENAL UNIPERSONAL  - Sede Central - (CSJ JUNIN)"
+  },
+  {
+    "value": "6194",
+    "label": "JUZGADO DE PAZ LETRADO - Sede Acobamba - (CSJ JUNIN)"
+  },
+  {
+    "value": "6195",
+    "label": "2° SALA MIXTA - SEDE SALAS DE LA MERCED (EX SA - (CSJ JUNIN)"
+  },
+  {
+    "value": "6196",
+    "label": "SALA PENAL DE APELACIONES - SEDE SALAS DE LA M - (CSJ JUNIN)"
+  },
+  {
+    "value": "6197",
+    "label": "JUZGADO DE PAZ LETRADO - Sede Mazamari - (CSJ JUNIN)"
+  },
+  {
+    "value": "6198",
+    "label": "1° JUZGADO FAMILIA -  Sede Central - (CSJ JUNIN)"
+  },
+  {
+    "value": "6199",
+    "label": "2° JUZGADO CIVIL - Sede Central - (CSJ JUNIN)"
+  },
+  {
+    "value": "6200",
+    "label": "5° JUZGADO CIVIL - Sede Central - (CSJ JUNIN)"
+  },
+  {
+    "value": "6201",
+    "label": "2° JUZGADO PENAL - Sede Central - (CSJ JUNIN)"
+  },
+  {
+    "value": "6202",
+    "label": "3° JUZGADO PENAL - Sede Central - (CSJ JUNIN)"
+  },
+  {
+    "value": "6203",
+    "label": "7° JUZGADO PENAL - Sede Central - (CSJ JUNIN)"
+  },
+  {
+    "value": "6204",
+    "label": "1° SALA MIXTA - Sede Central - (CSJ JUNIN)"
+  },
+  {
+    "value": "6205",
+    "label": "2° JUZGADO MIXTO - Sede La Oroya - (CSJ JUNIN)"
+  },
+  {
+    "value": "6206",
+    "label": "JUZGADO MIXTO TRANSITORIO - Sede Oxapampa - (CSJ JUNIN)"
+  },
+  {
+    "value": "6207",
+    "label": "PAZ LETRADO - Sede Huancayo - (CSJ JUNIN)"
+  },
+  {
+    "value": "6208",
+    "label": "2° JUZGADO DE PAZ LETRADO - Sede Tarma - (CSJ JUNIN)"
+  },
+  {
+    "value": "6209",
+    "label": "JUZGADO DE PAZ LETRADO - Sede Junin - (CSJ JUNIN)"
+  },
+  {
+    "value": "6210",
+    "label": "2° JUZGADO PENAL UNIPERSONAL  - Sede Central - (CSJ JUNIN)"
+  },
+  {
+    "value": "6211",
+    "label": "2° SALA PENAL - Sede Central - (CSJ JUNIN)"
+  },
+  {
+    "value": "6212",
+    "label": "1° SALA PENAL - CSJ Callao"
+  },
+  {
+    "value": "6229",
+    "label": "SALA PENAL LIQUIDADORA (AD. FUNC. SPA)- PUENTE PIEDRA CISAJ"
+  },
+  {
+    "value": "6239",
+    "label": "SALA CIVIL"
+  },
+  {
+    "value": "6249",
+    "label": "SALA MIXTA TRANSITORIA DEL CALLAO - CSJ Callao"
+  },
+  {
+    "value": "6257",
+    "label": "SALA CIVIL - CSJ Callao"
+  },
+  {
+    "value": "6261",
+    "label": "SALA PENAL DE APELACIONES - Sede La Marina - CSJ Callao"
+  },
+  {
+    "value": "6271",
+    "label": "4° SALA PENAL - CSJ Callao"
+  },
+  {
+    "value": "6272",
+    "label": "1° SALA CIVIL - CSJ Callao"
+  },
+  {
+    "value": "6277",
+    "label": "SALA PENAL LIQUIDADORA (AD. FUNC. SPA) - VENTANILLA"
+  },
+  {
+    "value": "6291",
+    "label": "2° SALA PENAL - CSJ Callao"
+  },
+  {
+    "value": "6296",
+    "label": "SALA PENAL DE APELACIONES - PUENTE PIEDRA CISAJ"
+  },
+  {
+    "value": "6308",
+    "label": "SALA ESPECIALIZADA LABORAL - CSJ Callao"
+  },
+  {
+    "value": "6324",
+    "label": "SALA LABORAL TRANSITORIA - CSJ Callao"
+  },
+  {
+    "value": "6330",
+    "label": "SALA PENAL DE APELACIONES DE VENTANILLA"
+  },
+  {
+    "value": "6345",
+    "label": "3° SALA PENAL - CSJ Callao"
+  },
+  {
+    "value": "6349",
+    "label": "SALA LABORAL"
+  },
+  {
+    "value": "6356",
+    "label": "JUZGADO PENAL COLEGIADO SUPRAPROV. - SEDE SALAS DE LA MERCED"
+  },
+  {
+    "value": "6366",
+    "label": "2° SALA MIXTA - SEDE SALAS DE LA MERCED"
+  },
+  {
+    "value": "6370",
+    "label": "SALA PENAL ESPECIAL SUPERIOR DE LA CSJSC"
+  },
+  {
+    "value": "6374",
+    "label": "JUZGADO UNIPERSONAL - SEDE SALAS LA MERCED"
+  },
+  {
+    "value": "6375",
+    "label": "SALA PENAL LIQUIDADORA - SEDE SALAS DE LA MERCED"
+  },
+  {
+    "value": "6376",
+    "label": "SALA PENAL LIQUIDADORA (AD. FUNC. S APELAC)-SEDE NCPP SATIPO"
+  },
+  {
+    "value": "6381",
+    "label": "2° JUZGADO DE LA INVESTIGACION PREP. - SEDE SALAS LA MERCED"
+  },
+  {
+    "value": "6388",
+    "label": "SALA PENAL DE APELACIONES - SEDE NCPP SATIPO"
+  },
+  {
+    "value": "6393",
+    "label": "SALA PENAL DE APELACIONES - SEDE SALAS DE LA MERCED"
+  },
+  {
+    "value": "6396",
+    "label": "JUZGADO PENAL COLEGIADO CONFORMADO - SEDE SALAS LA MERCED"
+  },
+  {
+    "value": "6398",
+    "label": "1° SALA MIXTA - SEDE SALAS DE LA MERCED"
+  },
+  {
+    "value": "6401",
+    "label": "1° JUZG. INV. PREP. - SEDE SALAS LA MERCED"
+  },
+  {
+    "value": "6403",
+    "label": "SALA PENAL ESPECIAL (AD. FUNC. SALA APEL).- SEDE NCPP SATIPO"
+  },
+  {
+    "value": "6404",
+    "label": "JUZGADO PENAL LIQUIDADOR (AD. FUNC. JUP)- SEDE SALAS LA MERC"
+  },
+  {
+    "value": "6410",
+    "label": "SALA PENAL LIQUIDADORA (AD. FUNC. SPA) - SEDE CUPULA"
+  },
+  {
+    "value": "6420",
+    "label": "SALA DE APELACIONES - Sede Cupula"
+  },
+  {
+    "value": "6445",
+    "label": "SALA CIVIL  - Sede Principal"
+  },
+  {
+    "value": "6452",
+    "label": "SALA LABORAL TRANSITORIA - Sede Principal"
+  },
+  {
+    "value": "6467",
+    "label": "SALA CIVIL - S. Central"
+  },
+  {
+    "value": "6477",
+    "label": "SALA LABORAL"
+  },
+  {
+    "value": "6482",
+    "label": "SALA DE APELACIONES"
+  },
+  {
+    "value": "6492",
+    "label": "SALA PENAL LIQUIDADORA- TUMBES  (SALA PENAL DE APELACIONES)"
+  },
+  {
+    "value": "6513",
+    "label": "SALA CIVIL - Sede Central"
+  },
+  {
+    "value": "6523",
+    "label": "1° SALA PENAL APELACIONES DEL. ADUAN. TRIB. AMB. (AD. 1°SPA)"
+  },
+  {
+    "value": "6534",
+    "label": "SALA PENAL LIQUIDADORA (en Adici¿n) - Sede Central"
+  },
+  {
+    "value": "6539",
+    "label": "2º SALA PENAL DE APELACIONES - SEDE CENTRAL"
+  },
+  {
+    "value": "6540",
+    "label": "SALA PENAL LIQUIDADORA - SEDE CENTRAL"
+  },
+  {
+    "value": "6541",
+    "label": "2° SALA PENAL APELACIONES DEL. ADUAN. TRIB. AMB. (AD. 2°SPA)"
+  },
+  {
+    "value": "6547",
+    "label": "SALA LABORAL"
+  },
+  {
+    "value": "6570",
+    "label": "1º SALA PENAL DE APELACIONES - SEDE CENTRAL"
+  },
+  {
+    "value": "6571",
+    "label": "1º SALA CIVIL"
+  },
+  {
+    "value": "6572",
+    "label": "1º SALA LABORAL"
+  },
+  {
+    "value": "6573",
+    "label": "2º SALA CIVIL"
+  },
+  {
+    "value": "6574",
+    "label": "2º SALA LABORAL"
+  },
+  {
+    "value": "6575",
+    "label": "3° SALA LABORAL - SEDE CENTRAL"
+  },
+  {
+    "value": "6576",
+    "label": "3º SALA CIVIL"
+  },
+  {
+    "value": "6577",
+    "label": "SALA MIXTA DESCENTRALIZADA E ITINERANTE DE CAMANA"
+  },
+  {
+    "value": "6578",
+    "label": "SALA MIXTA - SEDE COVICORTI"
+  },
+  {
+    "value": "6579",
+    "label": "SALA MIXTA HUAMACHUCO - ITINERA A TRUJILLO - SEDE COVICORTI"
+  },
+  {
+    "value": "6580",
+    "label": "5° SALA LABORAL"
+  },
+  {
+    "value": "6581",
+    "label": "1° SALA LABORAL"
+  },
+  {
+    "value": "6582",
+    "label": "2° SALA LABORAL"
+  },
+  {
+    "value": "6583",
+    "label": "3° SALA LABORAL"
+  },
+  {
+    "value": "6584",
+    "label": "SALA MIXTA - JAEN"
+  },
+  {
+    "value": "6585",
+    "label": "1¿ Sala Civil"
+  },
+  {
+    "value": "6586",
+    "label": "2¿ Sala Civil"
+  },
+  {
+    "value": "6587",
+    "label": "SALA LABORAL PERMANENTE"
+  },
+  {
+    "value": "6588",
+    "label": "SALA CIVIL - SEDE JULIACA"
+  },
+  {
+    "value": "6589",
+    "label": "SALA LABORAL - SEDE ANEXA PUNO"
+  },
+  {
+    "value": "6590",
+    "label": "SALA MIXTA DESCENTRALIZADA - SEDE HUANCANE"
+  },
+  {
+    "value": "6591",
+    "label": "SALA CIVIL - SEDE SANTA ROSA"
+  },
+  {
+    "value": "6592",
+    "label": "SALA CIVIL - SUB SEDE MOYOBAMBA"
+  },
+  {
+    "value": "6593",
+    "label": "SALA LABORAL - Sede Central"
+  },
+  {
+    "value": "6594",
+    "label": "SALA CIVIL - SEDE CENTRAL"
+  },
+  {
+    "value": "6595",
+    "label": "SALA MIXTA DESC. E ITIN. - ANDAHUAYLAS"
+  },
+  {
+    "value": "6597",
+    "label": "SALA MIXTA DESCENTRALIZADA SUPRAPR. - S.TINGO MARIA"
+  },
+  {
+    "value": "6598",
+    "label": "SALA LABORAL - SEDE CENTRAL"
+  },
+  {
+    "value": "6599",
+    "label": "SALA CIVIL - Sede Central"
+  },
+  {
+    "value": "6600",
+    "label": "SALA MIXTA - Sede Central"
+  },
+  {
+    "value": "6601",
+    "label": "SALA MIXTA - Sede Nuevo Palacio"
+  },
+  {
+    "value": "6602",
+    "label": "SALA CIVIL"
+  },
+  {
+    "value": "6603",
+    "label": "SALA CIVIL"
+  },
+  {
+    "value": "6604",
+    "label": "SALA CIVIL TRANSITORIA - SEDE LA MERCED"
+  },
+  {
+    "value": "6605",
+    "label": "SALA LABORAL"
+  },
+  {
+    "value": "6606",
+    "label": "SALA CIVIL"
+  },
+  {
+    "value": "6607",
+    "label": "SALA CIVIL TRANSITORIA DESC. - SEDE VILLA MARINA"
+  },
+  {
+    "value": "6608",
+    "label": "SALA CIVIL (EX SALA MIXTA)- SEDE CENTRAL"
+  },
+  {
+    "value": "6609",
+    "label": "SALA CIVIL TRANSITORIA - SEDE CENTRAL"
+  },
+  {
+    "value": "6610",
+    "label": "1 SALA CIVIL PERMANENTE- SEDE CENTRAL"
+  },
+  {
+    "value": "6611",
+    "label": "2 SALA CIVIL PERMANENTE- SEDE CENTRAL"
+  },
+  {
+    "value": "6612",
+    "label": "SALA LABORAL - SEDE CENTRAL"
+  },
+  {
+    "value": "6613",
+    "label": "SALA ESPEC. CONTENCIOSO ADMINISTRATIVO TRANSITORIA-SEDE JAV"
+  },
+  {
+    "value": "6614",
+    "label": "5 SALA LABORAL"
+  },
+  {
+    "value": "6615",
+    "label": "6 SALA LABORAL PERMANENTE"
+  },
+  {
+    "value": "6616",
+    "label": "9 SALA LABORAL"
+  },
+  {
+    "value": "6617",
+    "label": "10 SALA LABORAL"
+  },
+  {
+    "value": "6618",
+    "label": "1 SALA ESPECIALIZADA DE FAMILIA"
+  },
+  {
+    "value": "6619",
+    "label": "2 SALA ESPECIALIZADA DE FAMILIA"
+  },
+  {
+    "value": "6620",
+    "label": "2 SALA CIVIL"
+  },
+  {
+    "value": "6621",
+    "label": "4 SALA CIVIL"
+  },
+  {
+    "value": "6622",
+    "label": "3 SALA CIVIL (EX 6)"
+  },
+  {
+    "value": "6623",
+    "label": "1 SALA CONSTITUCIONAL - SEDE ALZAMORA"
+  },
+  {
+    "value": "6624",
+    "label": "2 SALA CONSTITUCIONAL - SEDE ALZAMORA"
+  },
+  {
+    "value": "6625",
+    "label": "3 SALA CONSTITUCIONAL - SEDE ALZAMORA"
+  }
+]

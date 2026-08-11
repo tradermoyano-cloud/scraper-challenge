@@ -1,7 +1,19 @@
 import { HttpClient } from "../http/client";
-import { encodeForm, extractViewState, mergePartialUpdates } from "../jsf/helpers";
+import {
+  encodeForm,
+  extractViewState,
+  FilterOption,
+  mergePartialUpdates,
+  resolveFromOptions,
+} from "../jsf/helpers";
 import { logger } from "../logger";
 import { PageResult } from "../types";
+import pjDistritoData from "./data/pj-distrito.json";
+import pjEspecialidadData from "./data/pj-especialidad.json";
+import pjNivelData from "./data/pj-nivel.json";
+import pjOrganoData from "./data/pj-organo.json";
+import pjTipoRecursoData from "./data/pj-tipo-recurso.json";
+import pjTipoResolucionData from "./data/pj-tipo-resolucion.json";
 import { parsePjResultHtml } from "./pjParse";
 
 const HOST = "https://jurisprudencia.pj.gob.pe";
@@ -9,6 +21,70 @@ const INICIO = `${HOST}/jurisprudenciaweb/faces/page/inicio.xhtml`;
 const RESULTADO = `${HOST}/jurisprudenciaweb/faces/page/resultado.xhtml`;
 const FORM = "formBuscador";
 const SCROLLER = `${FORM}:data1`;
+
+/**
+ * Mapas internos nombre→código (listas planas únicas). El CLI acepta
+ * etiquetas del portal; estos mapas producen el código del POST.
+ */
+const PJ_NIVEL = pjNivelData as FilterOption[];
+const PJ_DISTRITO = pjDistritoData as FilterOption[];
+const PJ_ESPECIALIDAD = pjEspecialidadData as FilterOption[];
+const PJ_ORGANO = pjOrganoData as FilterOption[];
+const PJ_TIPO_RECURSO = pjTipoRecursoData as FilterOption[];
+const PJ_TIPO_RESOLUCION = pjTipoResolucionData as FilterOption[];
+
+export function resolvePjCorte(raw?: string): string {
+  return resolveFromOptions(raw, PJ_NIVEL, "1");
+}
+
+export function resolvePjDistrito(raw?: string): string {
+  return resolveFromOptions(raw, PJ_DISTRITO, "0");
+}
+
+export function resolvePjEspecialidad(raw?: string): string {
+  return resolveFromOptions(raw, PJ_ESPECIALIDAD, "0");
+}
+
+/** Órgano Jurisdiccional (campo buSala del portal). */
+export function resolvePjOrgano(raw?: string): string {
+  return resolveFromOptions(raw, PJ_ORGANO, "0");
+}
+
+/** Tipo de recurso (`buTipoRecurso`). */
+export function resolvePjTipoRecurso(raw?: string): string {
+  return resolveFromOptions(raw, PJ_TIPO_RECURSO, "0");
+}
+
+/** Tipo de resolución (`buTipoResolucion`). */
+export function resolvePjTipoResolucion(raw?: string): string {
+  return resolveFromOptions(raw, PJ_TIPO_RESOLUCION, "0");
+}
+
+/**
+ * Campos del formulario derivados de `--filter`, con las claves reales del
+ * POST. `organo` es el nombre canónico (etiqueta real "Órgano
+ * Jurisdiccional"); `sala` se acepta como alias retrocompatible.
+ */
+export function buildPjFilterFields(
+  filters: Record<string, string> = {}
+): Record<string, string> {
+  const corte = resolvePjCorte(filters.corte);
+  const distrito = resolvePjDistrito(filters.distrito);
+  const especialidad = resolvePjEspecialidad(filters.especialidad);
+  const organo = resolvePjOrgano(filters.organo ?? filters.sala);
+
+  return {
+    [`${FORM}:buCorte`]: corte,
+    [`${FORM}:buDistrito`]: distrito,
+    [`${FORM}:buEspecialidad`]: especialidad,
+    [`${FORM}:buSala`]: organo,
+    [`${FORM}:buAnio`]: filters.anio ?? "",
+    [`${FORM}:buNroExpediente`]: filters.expediente ?? "",
+    [`${FORM}:txtBusqueda`]: filters.q ?? "",
+    [`${FORM}:buTipoRecurso`]: resolvePjTipoRecurso(filters.tipoRecurso),
+    [`${FORM}:buTipoResolucion`]: resolvePjTipoResolucion(filters.tipoResolucion),
+  };
+}
 
 /**
  * Scraper del portal Jurisprudencia Nacional Sistematizada (PJ Perú).
@@ -52,15 +128,87 @@ export class PjScraper {
     this.viewState = vs;
   }
 
-  async search(filters: Record<string, string> = {}): Promise<PageResult> {
+  /**
+   * Reproduce el valueChange AJAX real que dispara el portal al elegir
+   * corte/distrito/especialidad. Necesario: el POST de búsqueda directo con
+   * un distrito/especialidad no-default fue rechazado en pruebas reales con
+   * `formBuscador:buDistrito: Validation Error: Value is not valid` — JSF
+   * valida el valor enviado contra las opciones vigentes en el servidor, y
+   * esas opciones solo se actualizan vía este AJAX. Sin encadenar esto,
+   * distrito/especialidad/órgano distintos del default fallan en silencio
+   * (0 resultados).
+   */
+  private async applyCascadeSelection(
+    corte: string,
+    distrito: string,
+    especialidad: string
+  ): Promise<void> {
+    if (corte !== "1") {
+      await this.ajaxValueChange("buCorte", { buCorte: corte });
+    }
+    if (distrito !== "0") {
+      await this.ajaxValueChange("buDistrito", { buCorte: corte, buDistrito: distrito });
+    }
+    if (especialidad !== "0") {
+      await this.ajaxValueChange("buEspecialidad", {
+        buCorte: corte,
+        buDistrito: distrito,
+        buEspecialidad: especialidad,
+      });
+    }
+  }
+
+  private async ajaxValueChange(
+    sourceField: string,
+    fieldValues: Record<string, string>
+  ): Promise<void> {
     const body = encodeForm({
       [FORM]: FORM,
-      [`${FORM}:buCorte`]: filters.corte ?? "1",
-      [`${FORM}:buDistrito`]: filters.distrito ?? "0",
-      [`${FORM}:buEspecialidad`]: filters.especialidad ?? "0",
-      [`${FORM}:buSala`]: filters.sala ?? "0",
-      [`${FORM}:buAnio`]: filters.anio ?? "",
-      [`${FORM}:txtBusqueda`]: filters.q ?? "",
+      [`${FORM}:buCorte`]: "1",
+      [`${FORM}:buDistrito`]: "0",
+      [`${FORM}:buEspecialidad`]: "0",
+      [`${FORM}:buSala`]: "0",
+      [`${FORM}:buAnio`]: "",
+      [`${FORM}:buNroExpediente`]: "",
+      [`${FORM}:txtBusqueda`]: "",
+      [`${FORM}:buTipoRecurso`]: "0",
+      ...Object.fromEntries(Object.entries(fieldValues).map(([k, v]) => [`${FORM}:${k}`, v])),
+      "javax.faces.partial.ajax": "true",
+      "javax.faces.source": `${FORM}:${sourceField}`,
+      "javax.faces.partial.execute": "@all",
+      "javax.faces.partial.render": "@all",
+      "javax.faces.behavior.event": "valueChange",
+      "org.richfaces.ajax.component": `${FORM}:${sourceField}`,
+      "javax.faces.ViewState": this.viewState,
+    });
+
+    logger.info(`PJ: valueChange AJAX de cascada (${sourceField})`);
+    const res = await this.http.post(INICIO, body, {
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
+        "Faces-Request": "partial/ajax",
+        "X-Requested-With": "XMLHttpRequest",
+        Referer: INICIO,
+      },
+    });
+
+    const raw = String(res.data);
+    if (res.status >= 400 || raw.length < 80 || !raw.includes("partial-response")) {
+      throw new Error(`PJ: valueChange de cascada (${sourceField}) falló con HTTP ${res.status}`);
+    }
+    const vs = extractViewState(raw);
+    if (vs) this.viewState = vs;
+  }
+
+  async search(filters: Record<string, string> = {}): Promise<PageResult> {
+    const corte = resolvePjCorte(filters.corte);
+    const distrito = resolvePjDistrito(filters.distrito);
+    const especialidad = resolvePjEspecialidad(filters.especialidad);
+    await this.applyCascadeSelection(corte, distrito, especialidad);
+
+    const body = encodeForm({
+      [FORM]: FORM,
+      ...buildPjFilterFields({ ...filters, corte, distrito, especialidad }),
       [`${FORM}:tabpanel-value`]: "general",
       forward: "buscar",
       busqueda: "especializada",

@@ -1,0 +1,142 @@
+[
+  {
+    "value": "0",
+    "label": "-- Todos --"
+  },
+  {
+    "value": "1",
+    "label": "Amazonas"
+  },
+  {
+    "value": "2",
+    "label": "Ancash"
+  },
+  {
+    "value": "3",
+    "label": "Apurimac"
+  },
+  {
+    "value": "4",
+    "label": "Arequipa"
+  },
+  {
+    "value": "5",
+    "label": "Ayacucho"
+  },
+  {
+    "value": "6",
+    "label": "Cajamarca"
+  },
+  {
+    "value": "7",
+    "label": "Callao"
+  },
+  {
+    "value": "8",
+    "label": "Cañete"
+  },
+  {
+    "value": "9",
+    "label": "Lima Norte"
+  },
+  {
+    "value": "10",
+    "label": "Cusco"
+  },
+  {
+    "value": "11",
+    "label": "Huancavelica"
+  },
+  {
+    "value": "12",
+    "label": "Huánuco"
+  },
+  {
+    "value": "13",
+    "label": "Huaura"
+  },
+  {
+    "value": "14",
+    "label": "Ica"
+  },
+  {
+    "value": "15",
+    "label": "Junin"
+  },
+  {
+    "value": "16",
+    "label": "La Libertad"
+  },
+  {
+    "value": "17",
+    "label": "Lambayeque"
+  },
+  {
+    "value": "18",
+    "label": "Lima"
+  },
+  {
+    "value": "19",
+    "label": "Loreto"
+  },
+  {
+    "value": "20",
+    "label": "Piura"
+  },
+  {
+    "value": "21",
+    "label": "Puno"
+  },
+  {
+    "value": "22",
+    "label": "San Martin"
+  },
+  {
+    "value": "23",
+    "label": "Tacna"
+  },
+  {
+    "value": "24",
+    "label": "Ucayali"
+  },
+  {
+    "value": "25",
+    "label": "Del Santa"
+  },
+  {
+    "value": "26",
+    "label": "Tumbes"
+  },
+  {
+    "value": "27",
+    "label": "Madre de Dios"
+  },
+  {
+    "value": "28",
+    "label": "Moquegua"
+  },
+  {
+    "value": "29",
+    "label": "Pasco"
+  },
+  {
+    "value": "30",
+    "label": "Lima Sur"
+  },
+  {
+    "value": "31",
+    "label": "Sullana"
+  },
+  {
+    "value": "38",
+    "label": "Lima Este"
+  },
+  {
+    "value": "39",
+    "label": "Puente Piedra - Ventanilla"
+  },
+  {
+    "value": "41",
+    "label": "Selva Central"
+  }
+]

@@ -1,0 +1,6 @@
+[
+  { "value": "0", "label": "-- Todos --" },
+  { "value": "1", "label": "Auto" },
+  { "value": "2", "label": "Sentencia" },
+  { "value": "3", "label": "Sentencia de Vista" }
+]
